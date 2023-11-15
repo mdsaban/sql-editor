@@ -1,0 +1,35 @@
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+img {
+  max-width: 100%;
+}
+
+.v-application, .headline, .title, .subheading{
+  font-family: "Inter" !important;
+  font-weight: 400;
+  color: #1D1E21 !important;
+}
+
+
+.v-btn{
+  border-radius: 8px !important;
+  text-transform: initial !important;
+  letter-spacing: initial !important;
+
+  &.v-size--x-small{
+    border-radius: 4px !important;
+  }
+
+  &.height-40{
+    height: 40px !important;
+  }
+  &.height-48{
+    height: 48px !important;
+  }
+  &__content{
+    line-height: 1 !important;
+  }
+}

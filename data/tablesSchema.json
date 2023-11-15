@@ -1,0 +1,175 @@
+[
+  {
+    "name": "orders",
+    "type": "table",
+    "children": [
+      {
+        "name": "orderID",
+        "type": "number"
+      },
+      {
+        "name": "customerID",
+        "type": "string"
+      },
+      {
+        "name": "employeeID",
+        "type": "number"
+      },
+      {
+        "name": "orderDate",
+        "type": "string"
+      },
+      {
+        "name": "requiredDate",
+        "type": "string"
+      },
+      {
+        "name": "shippedDate",
+        "type": "string"
+      },
+      {
+        "name": "shipVia",
+        "type": "number"
+      },
+      {
+        "name": "freight",
+        "type": "number"
+      },
+      {
+        "name": "shipName",
+        "type": "string"
+      },
+      {
+        "name": "street",
+        "type": "string"
+      },
+      {
+        "name": "city",
+        "type": "string"
+      },
+      {
+        "name": "region",
+        "type": "string"
+      },
+      {
+        "name": "postalCode",
+        "type": "number"
+      },
+      {
+        "name": "country",
+        "type": "string"
+      },
+      {
+        "name": "productID",
+        "type": "number"
+      },
+      {
+        "name": "unitPrice",
+        "type": "number"
+      },
+      {
+        "name": "quantity",
+        "type": "number"
+      },
+      {
+        "name": "discount",
+        "type": "number"
+      }
+    ]
+  },
+  {
+    "name": "customers",
+    "type": "table",
+    "children": [
+      {
+        "name": "customerID",
+        "type": "string"
+      },
+      {
+        "name": "companyName",
+        "type": "string"
+      },
+      {
+        "name": "contactName",
+        "type": "string"
+      },
+      {
+        "name": "contactTitle",
+        "type": "string"
+      },
+      {
+        "name": "address",
+        "type": "object",
+        "children": [
+          {
+            "name": "street",
+            "type": "string"
+          },
+          {
+            "name": "city",
+            "type": "string"
+          },
+          {
+            "name": "region",
+            "type": "string"
+          },
+          {
+            "name": "postalCode",
+            "type": "string"
+          },
+          {
+            "name": "country",
+            "type": "string"
+          },
+          {
+            "name": "phone",
+            "type": "string"
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "name": "products",
+    "type": "table",
+    "children": [
+      {
+        "name": "productID",
+        "type": "number"
+      },
+      {
+        "name": "supplierID",
+        "type": "number"
+      },
+      {
+        "name": "categoryID",
+        "type": "number"
+      },
+      {
+        "name": "unitPrice",
+        "type": "number"
+      },
+      {
+        "name": "unitsInStock",
+        "type": "number"
+      },
+      {
+        "name": "unitsOnOrder",
+        "type": "number"
+      },
+      {
+        "name": "reorderLevel",
+        "type": "number"
+      },
+      {
+        "name": "discontinued",
+        "type": "boolean"
+      },
+      {
+        "name": "name",
+        "type": "string"
+      }
+    ]
+  }
+]
