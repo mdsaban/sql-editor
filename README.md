@@ -16,15 +16,17 @@ This is a web-based SQL editor application for runing SQL queries and displaying
 
 ## Features
 -   **Overall Layout**: There are 3 sections mainly.
-	- First one if where user can see their saved queries and data tables/sources.
-	- Second section is the SQL editor for writing multiple queries, with tabs. Since the users want to run multiple queries at a time.
-	- Third is result section, where the results are shown for the query that is run by the user.
-	-
+	- First section section displays the user's saved queries and data tables/sources.
+	- The second section is a SQL editor for writing queries at once. It has tabs because users want to run different queries together.
+	- The final section is dedicated to presenting the results of the user-executed queries.
+
 -  **Saved Queries**: The saved queries of the user will be shown here, they can re-run it or delete it anytime once they are not needed.
 
 -  **Data tables/sources**: It displays the list of tables and the columns in it, so that user can quickly reference to it when they are writing a query. They can also search through these data using the search feature provided.
 
--  **Run Query**: User can write a query and the run it.
+-  **SQL Query Input**:  This is where the user can enter their query. It features automatic syntax highlighting for SQL and offers hints and autocompletes SQL keywords.
+
+-  **Run Query**: The user can type in a query and then execute it.
 
 -  **Save Query**: User can save their queries. And they can see it in `Saved Queries` section.
 
@@ -32,6 +34,8 @@ This is a web-based SQL editor application for runing SQL queries and displaying
 	- Query data (We use virtualised data to **render a large amount of rows in your application without breaking the browser**)
 	- Time taken to run this query
 	- Total data scanned to get the result
+
+	User can also sort the data, drag and drop the columns to rearrange according to their need.
 
 -  **Export the result**: Allow users to export the results of a query in JSON, XML, and CSV formats.
 
@@ -41,6 +45,7 @@ This is a web-based SQL editor application for runing SQL queries and displaying
 3. Allow users to see query history somewhere
 4. Add Dark/light theme toggle
 5. Mobile/Tablet Responsiveness
+6. Allow users to copy the result
 
 
 ## Load Time
