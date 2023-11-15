@@ -40,6 +40,8 @@ This is a web-based SQL editor application for runing SQL queries and displaying
 2. Export results to JSON and XML (Currently it has only CSV export)
 3. Allow users to see query history somewhere
 4. Add Dark/light theme toggle
+5. Mobile/Tablet Responsiveness
+
 
 ## Load Time
 - **GTMetrix** - I've used GTMTerix for checking the load time. The fully loaded time is `1.6s`, and other metrics are as below
