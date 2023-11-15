@@ -1,7 +1,7 @@
 
 # SQL Editor on VueJS
 
-Live URL - https://sql-editor.mdsaban.com
+Live URL - https://sql-editor.mdsaban.com/editor
 
 ![editor screenshot](./readme-images/sql-editor-website.png)
 
@@ -52,11 +52,29 @@ This is a web-based SQL editor application for runing SQL queries and displaying
 
 - **DevTools** - I've also checked the DOM loadtime using the chrome devtools. For both without caching (if the user loads for the first time) and with caching. Here are the results of it.
 	- Without caching
+
 	![without caching](./readme-images/without-cache.jpeg)
 	- With caching
+
 	![with caching](./readme-images/with-cache.jpeg)
 
 ## Optimisations
 - Replaced default table of vuetify with ag-grid library which can show Virtualized data tables. **Why**? - So that large chunk of rows/data can be rendered without making the DOM heavy, and not making the webapp slow.
 - Refactored and optimised the code. **Problem**? - new SQL editor was getting initialised for all the opened tabs. For example if there are 7 query tabs open, then there were 7 different sql editors input in the DOM. **Solution**? - Made sql editor form as sibiling of SQLEditor tabs and only render one input form and change the query inside it.
 -	Reduced the loadtime by removing the framework's default fonts and icon library that were not being used. This helped in reducing the render-blocking resources.
+
+## Build Setup
+```
+# install dependencies
+$ yarn
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+``````
